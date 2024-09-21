@@ -4,7 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-top: 10%;
     gap: 30px;
+
+   
   }
   
   .about-image img {
@@ -43,6 +46,13 @@
     align-items: flex-start;
     max-width: 500px;
   }
+  @media screen and (max-width: 768px) {
+    /* Add styles for larger screens */
+   .home-about {
+    margin-top: 70%;
+    
+  }
+}
 
   
   

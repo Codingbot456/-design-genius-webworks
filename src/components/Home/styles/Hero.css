@@ -3,7 +3,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin: 10px;
+ 
 
 }
 
@@ -81,7 +81,7 @@
 
 @media (max-width: 480px) {
   .slide-content {
-    height: 70vh; /* Further reduce height on small screens */
+    height: 50vh; /* Further reduce height on small screens */
   }
 
   .slide-content1 h1 {

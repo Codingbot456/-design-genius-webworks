@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './styles/Hero.css';
+import SubHero from './SubHero';
 
 // Import images
 import slide1 from '../assets/images/trial.jpg';
@@ -41,6 +42,7 @@ const Hero = () => {
   ];
 
   return (
+    <div>
     <div className="hero-container">
       <Slider {...settings}>
         {slides.map((slide, index) => (
@@ -58,6 +60,8 @@ const Hero = () => {
           </div>
         ))}
       </Slider>
+    </div>
+    <SubHero /> {/* Add SubHero component here */}
     </div>
   );
 };
