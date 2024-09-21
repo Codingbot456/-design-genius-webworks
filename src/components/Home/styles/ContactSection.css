@@ -46,6 +46,7 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
   }
   
   .contact-form h3 {
@@ -95,19 +96,8 @@
   
   /* Responsive Styling */
   @media (max-width: 768px) {
-
-    .contact-section{
-      width: 100%;
-     
-    }
-    .contact-container {
-      flex-direction: column;
-      width: 100%;
+    .contact-container{
     
-    }
-    .contact-form{
-      width: 100%;
-      
     }
   }
   
