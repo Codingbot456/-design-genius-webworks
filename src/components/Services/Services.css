@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .services-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Grid Layout */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service-details {
+    padding: 20px;
+  }
+  
+  .service-details h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .service-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-details li {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  /* Specializations Section */
+  .specializations-section {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .specializations-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .specializations-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .specializations-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Grid Layout for Specializations */
+  .specializations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .specialization-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .specialization-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .specialization-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .specialization-details {
+    padding: 20px;
+  }
+  
+  .specialization-details h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .specialization-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .specialization-details li {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-grid, .specializations-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card, .specialization-card {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-header h2, .specializations-header h2 {
+      font-size: 2rem;
+    }
+  
+    .services-header p, .specializations-header p {
+      font-size: 1rem;
+    }
+  
+    .service-card, .specialization-card {
+      width: 100%;
+    }
+  }
+  

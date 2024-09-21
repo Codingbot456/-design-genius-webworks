@@ -1,0 +1,47 @@
+.work-process-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  /* Left Section: Header and Paragraph */
+  .work-info {
+    max-width: 400px;
+  }
+  
+  .work-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .work-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Right Section: Work Process Steps */
+  .work-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .step {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .step p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
