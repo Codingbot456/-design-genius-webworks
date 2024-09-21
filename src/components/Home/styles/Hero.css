@@ -35,7 +35,6 @@
   width:100%;
   position: relative;
   z-index: 2;
-  color: white;
   padding: 20px;
  
   display: inline-block;
@@ -44,6 +43,27 @@
 }
 .content-2{
   margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+  gap: 30px;
+}
+.content-2 h1{
+  color: white;
+  font-size: 3em;
+}
+
+.content-2 p{
+  color: white;
+  font-size: 1.5em;
+}
+
+.content-2 .primary-btn{
+  height: 70px;
+  border: none;
+  outline: none;
 }
 
 
