@@ -1,62 +1,131 @@
-.slider-container1 {
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    margin-top: 7%;
+/* src/components/Hero.css */
+.hero-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide-content {
+  height: 100vh; /* Adjust the height of the slide */
+  text-align: center;
+  width: 100vw; /* Full viewport width */
+  position: relative; /* Ensure positioning context for child elements */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4; /* Fallback color */
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.slide-content1 {
+  height: 100%;
+  width:100%;
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability on all screens */
+}
+.content-2{
+  margin-top: 4%;
+}
+
+.primary-btn {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary-btn:hover {
+  background-color: #ff9933;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    height: 80vh; /* Reduce height on tablets */
+  }
+
+  .slide-content1 h1 {
+    font-size: 2rem; /* Adjust heading size for tablets */
+  }
+
+  .slide-content1 p {
+    font-size: 1rem; /* Adjust paragraph size for tablets */
+  }
+
+  .primary-btn {
+    font-size: 14px; /* Adjust button font size for tablets */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-content {
+    height: 70vh; /* Further reduce height on small screens */
+  }
+
+  .slide-content1 h1 {
+    font-size: 1.5rem; /* Adjust heading size for small screens */
+  }
+
+  .slide-content1 p {
+    font-size: 0.9rem; /* Adjust paragraph size for small screens */
+  }
+
+  .primary-btn {
+    font-size: 12px; /* Adjust button font size for small screens */
+    padding: 6px 12px;
   }
   
-  .slide1 {
-    width: 100%;
-    height: 100%;
+  /* Add padding to make the button easier to tap on small screens */
+  .primary-btn {
+    padding: 12px;
   }
-  
-  .slide-background {
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .slide-contents1 {
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .slide-contents1 h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  
-  .slide-contents1 p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .primary-button {
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    background-color: #ff6347;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .primary-button:hover {
-    background-color: #ff4500;
-  }
-  
-  .slick-dots li button:before {
-    font-size: 12px;
-    color: white;
-  }
-  
-  .slick-prev, .slick-next {
-    z-index: 1;
-  }
-  
+}
+
+/* Slick Slider Dots Styling */
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ff6600; /* Active dot color */
+}
