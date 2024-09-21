@@ -45,7 +45,7 @@ const InsightsSection = () => {
                 <span className="insight-author">- {insight.author}</span>
                 <span className="insight-date">{insight.date}</span>
               </div>
-              <button className="accent-button">Read More</button>
+              <button className="accent-btn">Read More</button>
             </div>
           </div>
         ))}

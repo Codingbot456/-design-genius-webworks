@@ -151,25 +151,29 @@ button:focus, .btn:focus {
 }
 
 /* Secondary button */
-.btn-secondary {
-  background-color: var(--secondary);
+.secondary-btn {
+  background-color: var(--indigo);
   border-color: var(--secondary);
+  width: 200px;
+  
 }
 
-.btn-secondary:hover {
+.secondary-btn:hover {
   background-color: var(--gray-dark);
   border-color: var(--gray-dark);
 }
 
 /* Accent button */
-.btn-accent {
-  background-color: var(--accent);
-  border-color: var(--accent);
+.accent-btn {
+  background-color: transparent;
+  border: .3px solid purple;
+  width: 200px;
 }
 
-.btn-accent:hover {
-  background-color: var(--pink);
-  border-color: var(--pink);
+.accent-btn:hover {
+  background-color: var(--white);
+border: none;
+  color: var(--orange);
 }
 
 /* Small Button */

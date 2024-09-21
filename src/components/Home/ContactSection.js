@@ -44,7 +44,7 @@ const ContactSection = () => {
               <label htmlFor="message">Your Message</label>
               <textarea id="message" placeholder="Write your message here" rows="5" required></textarea>
             </div>
-            <button type="submit" className="primary-button">Send Message</button>
+            <button type="submit" className="primary-btn">Send Message</button>
           </form>
         </div>
       </div>

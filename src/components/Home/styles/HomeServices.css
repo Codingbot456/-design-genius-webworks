@@ -1,47 +1,89 @@
+
+/* Home Services Section */
 .home-services {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
+  padding: 60px 20px;
+  max-width: 100%;
+  background: linear-gradient(to bottom ,#29415a, white, white);
+
   
-  /* Services Info Section */
-  .services-info {
-    text-align: center;
-    
-  }
-  
-  
-  
-  /* Services Offered Section */
-  .services-offered {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  
-    gap: 20px;
-  }
-  
-  .service-card {
-    position: relative;
-    width: 30%;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    
-  }
-  
-  .service-bg {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover .service-bg {
-    transform: scale(1.1);
-  }
+
  
+  
+}
+
+
+.services-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-info h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.services-info p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Services Offered */
+.services-offered {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 32%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-bg {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid #3498db;
+}
+
+.service-details {
+  padding: 20px;
+}
+.services-info{
+  display: grid;
+  gap: 5px;
+}
+
+.service-details h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service-details p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.secondary-btn {
+  display: inline-block;
+  justify-self: center;
+}
+
+
