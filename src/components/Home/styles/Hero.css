@@ -17,6 +17,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f4f4f4; /* Fallback color */
+ 
 }
 
 .slide-image {
@@ -45,19 +46,7 @@
   margin-top: 4%;
 }
 
-.primary-btn {
-  padding: 10px 20px;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
 
-.primary-btn:hover {
-  background-color: #ff9933;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -73,10 +62,7 @@
     font-size: 1rem; /* Adjust paragraph size for tablets */
   }
 
-  .primary-btn {
-    font-size: 14px; /* Adjust button font size for tablets */
-    padding: 8px 16px;
-  }
+ 
 }
 
 @media (max-width: 480px) {
