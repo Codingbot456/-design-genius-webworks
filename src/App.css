@@ -59,7 +59,7 @@ h2::before {
   justify-content: center;
   background-color: var(--orange);
   width: 50px;
-  height: 5px;
+  height: 5.0px;
 }
 
 
