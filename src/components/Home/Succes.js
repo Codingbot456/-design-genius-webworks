@@ -11,7 +11,20 @@ const Success = () => {
         <h2>Our Achievements</h2>
         <p>We have excelled in various services and consistently delivered successful projects.</p>
 
-        <div className="progress-bar">
+
+<div>
+
+  <div className='leading'>
+    <ul>
+    <li>Developing a good relationship with our customers</li>
+    <li>Developing a good relationship with our customers</li>
+    <li>Developing a good relationship with our customers</li>
+    <li>Developing a good relationship with our customers</li>
+    <li>Developing a good relationship with our customers</li>
+  </ul>
+    
+  </div>
+<div className="progress-bar">
           <p>Web Development</p>
           <div className="progress">
             <div className="progress-fill" style={{ width: "90%" }}>90%</div>
@@ -38,6 +51,8 @@ const Success = () => {
             <div className="progress-fill" style={{ width: "80%" }}>80%</div>
           </div>
         </div>
+</div>
+        
       </div>
 
       <div className="video-section">

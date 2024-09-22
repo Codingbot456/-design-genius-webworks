@@ -9,6 +9,7 @@ import TestimonialSection from './TestimonialSection'
 import InsightsSection from './InsightsSection'
 import ContactSection from './ContactSection'
 import SubHero from './SubHero'
+import BackgroundSection from './BackgroundSection'
 import './Home.css'
 
 function Home() {
@@ -19,6 +20,7 @@ function Home() {
         <HomeServices />
         <Success />
         <WorkProcess />
+        <BackgroundSection />
         <TeamSection />
         <TestimonialSection />
         <InsightsSection />

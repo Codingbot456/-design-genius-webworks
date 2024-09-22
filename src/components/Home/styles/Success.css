@@ -1,14 +1,16 @@
 .success-section {
     display: flex;
-    justify-content: space-between;
+  justify-content: center;
     align-items: flex-start;
    flex-wrap: wrap;
     gap: 30px;
     padding: 40px;
+
   }
   
   /* Video Section */
   .video-section video {
+    flex:1;
     max-width: 100%;
     height: auto;
     border-radius: 8px;
@@ -16,22 +18,33 @@
   
   /* Progress Section */
   .progress-section {
-    max-width: 500px;
+    max-width: 600px;
+    padding: 20px;
+    background:rgb(233, 224, 224);
+  }
+
+  .leading{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+  }
+  .leading ul {
+    list-style: disc; /* Ensures the list uses bullet points */
+    padding-left: 20px; /* Adjust left padding if needed */
   }
   
-  .progress-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+  .leading ul li::marker {
+    font-size: 2em; /* Makes the bullet points larger */
+    color: #007bff; /* Change the color to a custom color (blue in this case) */
   }
   
-  .progress-section p {
-    margin-bottom: 20px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
   
-  /* Progress Bars */
+
+
   .progress-bar {
+    margin-top: 20px;
     margin-bottom: 20px;
   }
   

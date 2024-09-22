@@ -21,7 +21,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark:#343a40 ;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -165,8 +165,9 @@ button:focus, .btn:focus {
 
 /* Accent button */
 .accent-btn {
-  background-color: transparent;
+  background-color: white;
   border: .3px solid purple;
+  color:var(--orange);
   width: 200px;
 }
 
