@@ -1,0 +1,73 @@
+.success-section {
+    display: flex;
+  justify-content: center;
+    align-items: flex-start;
+   flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+
+  }
+  
+  /* Video Section */
+  .video-section video {
+    flex:1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Progress Section */
+  .progress-section {
+    max-width: 600px;
+    padding: 20px;
+   background-color: var(--white);
+  }
+
+  .leading{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+  }
+  .leading ul {
+    list-style: disc; /* Ensures the list uses bullet points */
+    padding-left: 20px; /* Adjust left padding if needed */
+  }
+  
+  .leading ul li::marker {
+    font-size: 2em; /* Makes the bullet points larger */
+    color: #007bff; /* Change the color to a custom color (blue in this case) */
+  }
+  
+  
+
+
+  .progress-bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar p {
+    margin-bottom: 5px;
+  }
+  
+  .progress {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+  }
+  
+  .progress-fill {
+    background-color:var(--orange);
+    height: 100%;
+    line-height: 20px;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+  }
+  

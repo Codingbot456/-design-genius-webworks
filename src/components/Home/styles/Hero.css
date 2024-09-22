@@ -1,0 +1,140 @@
+/* src/components/Hero.css */
+.hero-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+ 
+
+}
+
+.slide-content {
+  height: 100vh; /* Adjust the height of the slide */
+  text-align: center;
+  width: 100vw; /* Full viewport width */
+  position: relative; /* Ensure positioning context for child elements */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f4; /* Fallback color */
+ 
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.slide-content1 {
+  height: 100%;
+  width:100%;
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+ 
+  display: inline-block;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better readability on all screens */
+}
+.content-2{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+  gap: 30px;
+}
+.content-2 h1{
+  color: white;
+  font-size: 3em;
+}
+
+.content-2 p{
+  color: white;
+  font-size: 1.5em;
+}
+
+.content-2 .primary-btn{
+  height: 70px;
+  border: none;
+  outline: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    height: 80vh; /* Reduce height on tablets */
+  }
+
+  .slide-content1 h1 {
+    font-size: 2rem; /* Adjust heading size for tablets */
+  }
+
+  .slide-content1 p {
+    font-size: 1rem; /* Adjust paragraph size for tablets */
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .slide-content {
+    height: 50vh; /* Further reduce height on small screens */
+  }
+
+  .slide-content1 h1 {
+    font-size: 1.5rem; /* Adjust heading size for small screens */
+  }
+
+  .slide-content1 p {
+    font-size: 0.9rem; /* Adjust paragraph size for small screens */
+  }
+
+  .primary-btn {
+    font-size: 12px; /* Adjust button font size for small screens */
+    padding: 6px 12px;
+  }
+  
+  /* Add padding to make the button easier to tap on small screens */
+  .primary-btn {
+    padding: 12px;
+  }
+}
+
+/* Slick Slider Dots Styling */
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #ff6600; /* Active dot color */
+}

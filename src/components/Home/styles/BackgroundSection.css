@@ -1,0 +1,17 @@
+.background-section {
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .content {
+    position: relative; /* Position content above the background */
+    z-index: 2; /* Ensure content is above the background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Center vertically */
+    text-align: center;
+    color: white; /* Text color */
+  }
+  
